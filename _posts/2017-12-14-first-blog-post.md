@@ -1,6 +1,7 @@
 ---
 layout: post
-title: first jekyll post
+title: A Great First Post
 ---
 
-just trying to get jekyll to work...
+This is it!
+What a wonderful post
