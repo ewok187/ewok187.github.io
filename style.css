@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+li {
+    display: inline;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.fa {
+    margin: 0px 40px 10px 40px;
+    color: #F0E6C3;
+}
+
+#name {
+    margin-top: 50px;
+    color: #F0E6C3;
+}
