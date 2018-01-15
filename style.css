@@ -1,21 +1,30 @@
 body {
     background-color: black;
-}
-
-li {
+  }
+  
+  li {
     display: inline;
-}
-
-.links {
+  }
+  
+  .links {
     list-style-type: none;
-}
-
-.fa {
+  }
+  
+  .fa {
     margin: 0px 40px 10px 40px;
-    color: #F0E6C3;
-}
-
-#name {
+    color: #f0e6c3;
+  }
+  
+  .fa:hover {
+    color: gold;
+    text-decoration: none;
+  }
+  
+  #name {
     margin-top: 50px;
-    color: #F0E6C3;
-}
+    color: #f0e6c3;
+  }
+  
+  #name::selection {
+    color: gold;
+  }
