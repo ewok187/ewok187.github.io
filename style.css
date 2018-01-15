@@ -1,31 +1,35 @@
 body {
-    background-color: black;
-  }
-  
-  li {
-    display: inline;
-  }
-  
-  .links {
-    list-style-type: none;
-  }
-  
-  .fa {
-    margin: 0px 40px 10px 40px;
-    color: #f0e6c3;
-  }
-  
-  .fa:hover {
-    color: gold;
-    text-decoration: none;
-  }
-  
-  #name {
-    margin-top: 50px;
-    color: #f0e6c3;
-    transition: color 0.5s ease-in ;
-  }
-  
-  #name::selection {
-    color: gold;
-  }
+  background-color: black;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  display: inline-block;
+}
+
+.links {
+  list-style-type: none;
+}
+
+.fa {
+  margin: 0px 40px 10px 40px;
+  color: #f0e6c3;
+  transition: color 0.5s ease-in;
+}
+
+.fa:hover {
+  color: gold;
+  text-decoration: none;
+}
+
+#name {
+  margin-top: 50px;
+  color: #f0e6c3;
+}
+
+#name::selection {
+  color: gold;
+}
