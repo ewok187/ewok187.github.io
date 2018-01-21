@@ -2,12 +2,21 @@ body {
   background-color: black;
 }
 
-a {
-  text-decoration: none !important;
+p {
+  color: #f0e6c3;
+}
+
+a:hover {
+  color: gold;
+  text-decoration: none;
 }
 
 li {
-  display: inline-block;
+  display: inline-block
+}
+
+ul {
+  padding: 0;
 }
 
 .links {
@@ -17,7 +26,7 @@ li {
 .fa {
   margin: 0px 40px 10px 40px;
   color: #f0e6c3;
-  transition: color 0.5s ease-in;
+  transition: color 0.75s ease-in ;
 }
 
 .fa:hover {
@@ -26,10 +35,33 @@ li {
 }
 
 #name {
+  font-size: 72px;
   margin-top: 50px;
-  color: #f0e6c3;
+}
+
+@media (max-width: 500px) {
+    #name {
+        font-size: 42px;
+    }
 }
 
 #name::selection {
   color: gold;
+}
+
+#name {
+  opacity: 0;
+  animation: fade-in 1.5s 1s forwards;
+}
+
+@media (max-width: 500px) {
+    #name {
+        font-size: 48px;
+    }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
 }
