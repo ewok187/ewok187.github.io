@@ -11,14 +11,17 @@ a:hover {
   text-decoration: none;
 }
 
-li {
-  display: inline-block;
-}
-
 ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
+}
+
+li {
+  flex-grow: 1;
+  flex-basis: 120px;
+  opacity: 0;
+    animation: fade-in 1.5s 1.4s forwards
 }
 
 .links {
