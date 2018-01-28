@@ -13,15 +13,22 @@ a:hover {
 
 ul {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 li {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
+  -ms-flex-preferred-size: 120px;
   flex-basis: 120px;
   opacity: 0;
-    animation: fade-in 1.5s 1.4s forwards
+  -webkit-animation: fade-in 1.5s 1.4s forwards;
+  animation: fade-in 1.5s 1.4s forwards
 }
 
 .links {
@@ -31,6 +38,8 @@ li {
 .fa {
   margin: 0px 40px 10px 40px;
   color: #f0e6c3;
+  -webkit-transition: color 0.75s ease-in;
+  -o-transition: color 0.75s ease-in;
   transition: color 0.75s ease-in;
 }
 
@@ -49,8 +58,15 @@ li {
     font-size: 42px;
   }
   ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
+}
+
+#name::-moz-selection {
+  color: gold;
 }
 
 #name::selection {
@@ -59,7 +75,14 @@ li {
 
 #name {
   opacity: 0;
+  -webkit-animation: fade-in 1.5s 1s forwards;
   animation: fade-in 1.5s 1s forwards;
+}
+
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
